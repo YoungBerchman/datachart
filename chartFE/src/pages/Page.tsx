@@ -53,13 +53,13 @@ const EconomicDataChart = () => {
   }, []); // Empty dependency array to ensure this only runs once
 
   return (
-    <Card className="bg-white shadow-lg rounded-lg overflow-hidden">
+    <Card className="bg-black shadow-lg rounded-lg overflow-hidden h-[100vh]">
       <CardHeader>
-        <CardTitle>Bar Chart - Multiple</CardTitle>
+        <CardTitle className="text-white">Bar Chart - Multiple</CardTitle>
         <CardDescription>January - June 2024</CardDescription>
       </CardHeader>
       <CardContent>
-        <ChartContainer config={chartConfig} className=" h-72">
+        <ChartContainer config={chartConfig} className=" h-[70vh] w-[70vw]">
           <BarChart data={chartData}>
             <CartesianGrid vertical={false} />
             <XAxis
